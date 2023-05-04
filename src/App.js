@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+
+import { useEffect, useState} from 'react';
 import './App.css';
+import DriveFiles from './components/DriveFiles';
+
 
 function App() {
+
+  const [numeroBox, setNumeroBox] = useState ('');
+
+  const Lanzar = () => {
+
+    let min = 7;
+    let max = 11;
+
+    let numero = Math.random() * (max - min) + min;
+    let numeroRedondo = Math.floor(numero);
+
+    setNumeroBox ('./iZbox' + numeroRedondo + '.png');
+  }
+
+  // useEffect(() => {
+  //   Lanzar();
+  // },[])
+
+  console.log(numeroBox)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      Lanzar();
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <img src={numeroBox} alt='box' className='boxImg'/>
+      <DriveFiles />
     </div>
   );
 }
