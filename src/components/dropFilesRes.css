@@ -1,30 +1,29 @@
-.dropCont {
-    width: 100%;
-    height: 70%;
-    padding: 20px 10px 0px 50px;
+.dropContRes {
+    width: 80%;
+    height: 80vh;
+    margin: 0px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     z-index: 2;
+    align-items: center;
 }
 
-.dropOff {
+.dropOffRes {
     cursor: pointer;
     width: 100%;
-    height: 90%;
+    height: 30vh;
+    box-shadow: #79458f80 0px 5px 10px;
     border-radius: 15px;
     background-color: #dcd7f5af;
-    box-shadow: #79458f80 0px 5px 10px;
 }
 
-.dropOn {
+.dropOnRes {
     cursor: pointer;
     width: 100%;
-    height: 90%;
+    height: 50%;
+    box-shadow: #79458f80 0px 5px 10px;
     border-radius: 15px;
     background-color: #DCD7F5;
-    box-shadow: #79458f80 0px 5px 10px;
 }
 
 input[type=file]::file-selector-button {
@@ -35,8 +34,9 @@ input#miArchivo {
     color: transparent;
 }
 
-.animationCont {
+.animationContRes {
     width: 100%;
+    margin-left: -20px;
 }
 
 #untitled-s-g1 {
@@ -125,52 +125,53 @@ input#miArchivo {
     opacity: 1;
 }
 
-.filesCont {
+.filesContRes {
     height: 200px;
     overflow: hidden;
     overflow-y: scroll;
 }
 
-.filesCont::-webkit-scrollbar {
+.filesContRes::-webkit-scrollbar {
     display: none;
 }
 
-.messageOn {
+.messageOnRes {
     position: absolute;
-    height: 100%;
-    width: 50%;
-    top: 0px;
+    height: 60%;
+    width: 100%;
+    top: 40%;
     left: 0px;
     z-index: 3;
 }
 
-.messageCont {
+.messageContRes {
     position: absolute;
-    top: 110px;
-    left: 70px;
-    padding: 0px 30px;
+    top: 85px;
+    left: 50px;
+    padding: 0px 20px;
+    width: 100%;
+    height: 49%;
     display: flex;
-    height: 36%;
     overflow-y: scroll;
     cursor: pointer;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.messageCont::-webkit-scrollbar {
+.messageContRes::-webkit-scrollbar {
     display: none;
 }
 
-.uploadMessageText {
-    margin: 20px 10px 10px 10px;
+.uploadMessageTextRes {
+    margin: 20px 10px;
     text-align: center;
     color: #79458F;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 }
 
-.uploadMessageFile {
+.uploadMessageFileRes{
     margin: 10px;
     text-align: center;
     color: #202020;
@@ -180,8 +181,8 @@ input#miArchivo {
 
 }
 
-.dropButton {
-    margin: 10px 0px 20px 0px;
+.dropButtonRes {
+    margin-bottom: 20px;
     padding: 10px;
     font-size: 15px;
     border: none;
@@ -194,7 +195,7 @@ input#miArchivo {
     box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
-.dropButton:hover {
+.dropButtonRes:hover {
     background-color: #007e97ab;
     transform: scale3d(1.10, 1.10, 1);
     transition: all 1s;
@@ -202,18 +203,4 @@ input#miArchivo {
 
 .closed {
     display: none;
-}
-
-#toasterok {
-    position: absolute;
-    width: 30%;
-    top: 60px;
-    left: 65%;
-}
-
-#toasterfail {
-    position: absolute;
-    width: 30%;
-    top: 160px;
-    left: 35%;
 }

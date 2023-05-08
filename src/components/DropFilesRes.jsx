@@ -1,5 +1,5 @@
 
-import './dropFiles.css';
+import './dropFilesRes.css';
 import React, { useEffect, useState } from 'react';
 import ImageConfig from '../config/ImageConfig';
 import UploadButton from '../assets/uploadButton';
@@ -8,10 +8,9 @@ import ToastFail from '../assets/toasterFail';
 
 
 
+const DropFilesRes = () => {
 
-const DropFiles = () => {
-
-    const [dropClass, setDropClass] = useState("dropOff")
+    const [dropClass, setDropClass] = useState("dropOffRes")
     const [fileList, setFileList] = useState([]);
     const [uploadMessage, setUploadMessage] = useState('closed');
     const [aniToggle, setAniToggle] = useState(false);
@@ -31,28 +30,30 @@ const DropFiles = () => {
     }
 
     const onDragEnter = () => {
-        setDropClass("dropOn")
+        setDropClass("dropOnRes")
     }
     const onDragLeave = () => {
-        setDropClass("dropOff")
+        setDropClass("dropOffRes")
     }
     const onDrop = () => {
-        setDropClass("dropOff")
+        setDropClass("dropOffRes")
     }
 
     const uploadFiles = () => {
-        setUploadMessage('messageOn');
+        setUploadMessage('messageOnRes');
         setAniToggle(true);
+
     }
 
     const keepUploading = () => {
-        setAniToggle(false);
         setUploadMessage('closed');
         setFileList([]);
+        setAniToggle(false);
+
     }
 
     return (
-        <div className='dropCont'>
+        <div className='dropContRes'>
             {
                 fileList.length > 0 ? (
                     <div className={uploadMessage}>
@@ -62,16 +63,15 @@ const DropFiles = () => {
                             ) :
                             null
                         }
-                        <div className='messageCont' onClick={keepUploading}>
-                            <p className='uploadMessageText'>Tus archivos: </p>
+                        <div className='messageContRes' onClick={keepUploading}>
+                            <p className='uploadMessageTextRes'>Tus archivos: </p>
                             {fileList.map((item, index) => (
-                                <p className='uploadMessageFile' key={index}>{item.name},</p>
+                                <p className='uploadMessageFileRes' key={index}>{item.name},</p>
                             ))}
-                            <p className='uploadMessageText'>Se han subido correctamente!</p>
-                            <button className='dropButton' onClick={keepUploading} >Subir más archivos</button>
+                            <p className='uploadMessageTextRes'>Se han subido correctamente!</p>
+                            <button className='dropButtonRes' onClick={keepUploading} >Subir más archivos</button>
                         </div>
                     </div>
-
                 ) :
                     <div className={uploadMessage}>
                         {aniToggle && fileList.length === 0 ?
@@ -80,8 +80,8 @@ const DropFiles = () => {
                             ) :
                             null
                         }
-                        <div className='messageCont' onClick={keepUploading}>
-                            <p className='uploadMessageText'>No se han seleccionado archivos para subir!</p>
+                        <div className='messageContRes' onClick={keepUploading}>
+                            <p className='uploadMessageTextRes'>No se han seleccionado archivos para subir!</p>
                         </div>
                     </div>
             }
@@ -95,7 +95,10 @@ const DropFiles = () => {
             </input>
             {
                 fileList.length > 0 ? (
-                    <div className='filesCont'>
+                    <div className='filesContRes'>
+                        {/* <p className="drop-file-preview__title">
+                            Ready to upload
+                        </p> */}
                         <div className="drop-file-preview">
                             {
                                 fileList.map((item, index) => (
@@ -113,7 +116,9 @@ const DropFiles = () => {
                     </div>
                 ) : null
             }
-            <div className='animationCont' onClick={uploadFiles}>
+
+
+            <div className='animationContRes' onClick={uploadFiles}>
                 <UploadButton />
             </div>
 
@@ -121,4 +126,4 @@ const DropFiles = () => {
     )
 }
 
-export default DropFiles;
+export default DropFilesRes;

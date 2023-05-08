@@ -1,40 +1,48 @@
-.driveCont {
-    width: 50%;
-    padding: 20px 50px 0px 10px;
+.driveContRes {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index:2;
+    z-index: 2;
 }
 
-.titleCont{
-    display:flex;
+.titleContRes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.driveTitle {
+.titleCont2Res{
+    display:flex; 
+}
+
+.driveTitleRes {
+    line-height: 35px;
     margin: 10px 10px;
     color: #79458F;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 900;
     font-family: 'Montserrat', sans-serif;
 }
 
-.driveTitle:hover {
+.driveTitleRes:hover {
     color: #ffffff;
     transform: scale3d(1.05, 1.3, 1);
     transition: all .5s;
   }
 
-.driveText {
+.driveTextRes {
     margin-bottom:10px;
     text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 200;
     font-family: 'Montserrat', sans-serif;
 }
 
-.driveButton {
+.driveButtonRes {
     padding: 10px;
     font-size: 20px;
     margin: 10px 0px;
@@ -48,7 +56,7 @@
     box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
-.driveButton:hover {
+.driveButtonRes:hover {
     transform: scale3d(1.10, 1.10, 1);
     transition: all 1s;
 }
@@ -61,7 +69,7 @@
     display: none
 }
 
-.aniCont{
+.aniContRes{
     width:100%;
     margin-right:30px;
 }
