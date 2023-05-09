@@ -27,12 +27,59 @@
     box-shadow: #79458f80 0px 5px 10px;
 }
 
+.inputCont{
+    position: relative;
+    height: 100%;
+    width:100%;
+}
+
 input[type=file]::file-selector-button {
     display: none;
 }
 
 input#miArchivo {
     color: transparent;
+}
+
+.messageOn {
+    position: absolute;
+    width: 100%;
+    height:100%;
+}
+
+.messageCont {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    padding: 0px 30px;
+    display: flex;
+    overflow-y: scroll;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.messageCont::-webkit-scrollbar {
+    display: none;
+}
+
+.uploadMessageText {
+    margin: 20px 10px 10px 10px;
+    text-align: center;
+    color: #79458F;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.uploadMessageFile {
+    margin: 10px;
+    text-align: center;
+    color: #202020;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .animationCont {
@@ -48,8 +95,14 @@ input#miArchivo {
     transition: all 1s;
 }
 
-.logoSvg {
-    padding-top: 5px;
+.filesCont {
+    height: 30%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.filesCont::-webkit-scrollbar {
+    display: none;
 }
 
 .drop-file-input__label {
@@ -64,8 +117,8 @@ input#miArchivo {
 }
 
 .drop-file-preview {
-    margin-left: 30px;
-    width: 100%;
+    padding: 0px 20px;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -125,61 +178,6 @@ input#miArchivo {
     opacity: 1;
 }
 
-.filesCont {
-    height: 200px;
-    overflow: hidden;
-    overflow-y: scroll;
-}
-
-.filesCont::-webkit-scrollbar {
-    display: none;
-}
-
-.messageOn {
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    top: 0px;
-    left: 0px;
-    z-index: 3;
-}
-
-.messageCont {
-    position: absolute;
-    top: 110px;
-    left: 70px;
-    padding: 0px 30px;
-    display: flex;
-    height: 36%;
-    overflow-y: scroll;
-    cursor: pointer;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.messageCont::-webkit-scrollbar {
-    display: none;
-}
-
-.uploadMessageText {
-    margin: 20px 10px 10px 10px;
-    text-align: center;
-    color: #79458F;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.uploadMessageFile {
-    margin: 10px;
-    text-align: center;
-    color: #202020;
-    font-size: 15px;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
-
-}
-
 .dropButton {
     margin: 10px 0px 20px 0px;
     padding: 10px;
@@ -200,20 +198,23 @@ input#miArchivo {
     transition: all 1s;
 }
 
+.logoSvg {
+    padding-top: 5px;
+}
+
 .closed {
     display: none;
 }
 
 #toasterok {
     position: absolute;
-    width: 30%;
-    top: 60px;
+    width: 35%;
     left: 65%;
 }
 
 #toasterfail {
     position: absolute;
-    width: 30%;
-    top: 160px;
+    width: 35%;
+    top: 10vh;
     left: 35%;
 }

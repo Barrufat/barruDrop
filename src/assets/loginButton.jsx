@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import { useEffect } from "react";
-import { ReactComponent as Svg } from '../LogInButton.svg';
+import { ReactComponent as Svg } from './LogInButton.svg';
 
 export default function LoginButton() {
   useEffect(() => {

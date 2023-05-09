@@ -1,14 +1,13 @@
 
-
-import React, { useEffect, useState } from 'react';
-import './driveFilesRes.css'
 import DropFilesRes from './DropFilesRes';
 import useDrivePicker from 'react-google-drive-picker';
 import LoginButton from '../assets/loginButton';
 
-const DriveFilesRes = () => {
+import './driveFilesRes.css'
 
-    const [openPicker, data, authResponse] = useDrivePicker()
+const DriveFilesRes = ({ usuario }) => {
+
+    const [openPicker] = useDrivePicker()
 
     const handleOpenPicker = () => {
 
@@ -28,6 +27,7 @@ const DriveFilesRes = () => {
     return (
         <>
             <div className='driveContRes'>
+                <h3 className='driveTitle'>¡Hola {usuario}!</h3>
                 <div className='titleContRes'>
                     <div className='titleCont2Res'>
                         <h1 className='driveTitleRes'> Bienvenid@</h1>
@@ -35,7 +35,8 @@ const DriveFilesRes = () => {
                     </div>
                     <h1 className='driveTitleRes'> BarruDrop</h1>
                 </div>
-                <h2 className='driveTextRes'> Para subir tus archivos de forma simple a drive, puedes hacer LogIn a través de Google.</h2>
+                <h2 className='driveTextRes'> Para subir tus archivos de forma simple a drive,
+                    puedes hacer LogIn a través de Google.</h2>
                 <div className='aniContRes' onClick={() => handleOpenPicker()}>
                     <LoginButton />
                 </div>

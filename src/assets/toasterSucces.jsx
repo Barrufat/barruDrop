@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import { useEffect } from "react";
-import { ReactComponent as Svg } from '../ToasterOk.svg';
+import { ReactComponent as Svg } from './ToasterOk.svg';
 
 export default function ToastOk() {
   useEffect(() => {

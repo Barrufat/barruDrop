@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import { useEffect } from "react";
-import { ReactComponent as Svg } from '../UploadButton.svg';
+import { ReactComponent as Svg } from './UploadButton.svg';
 
 export default function UploadButton() {
   useEffect(() => {
