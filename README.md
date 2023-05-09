@@ -1,6 +1,6 @@
 <p align="center"><a href="https://barru-fat.web.app/" target="_blank" rel="noopener noreferrer"><img width="300" src="https://barru-fat.web.app/logo1barru.png" alt="Barrufat logo"></a></p>
 
-# BarruDrop
+# BarruDrop www.barrudrop.web.app
 
 Proyecto FrontEnd de una Drop zone para cargar archivos con:
 - Pop Up de registro/acceso
