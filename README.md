@@ -2,16 +2,15 @@
 
 # BarruDrop
 
-Proyecto FrontEnd de una Drop zone para cargar archivos con Pop Up de registro/acceso, responsive y diseño UX/UI con animaciones.
+Proyecto FrontEnd de una Drop zone para cargar archivos con:
+- Pop Up de registro/acceso
+- Diseño responsive
+- Diseño UX/UI con animaciones .svg
 
 ## Comenzando 🚀
 
-Para clonar este repositorio en tu Editor
-
-```bash
-npm install
-npm start
-```
+Link para clonar este repositorio en tu Editor:
+https://github.com/Barrufat/barruDrop.git
 
 ### Instalación 🔧
 
@@ -22,15 +21,30 @@ npm start
 
 ## Despliegue 📦
 
-_```bash
-npm install
-npm start
+```bash
+npm run build
+firebase deploy
 ```
+
+## Estado del proyecto ⚙️
+
+Al tratarse de una prueba técnica de Frontend no se ha conectado a ningún proyecto de BackEnd y, por lo tanto, ni los datos de los Usuarios ni los archivos se almacenan en ningún servidor, pues esto correspondría a otra fase del proyecto.
+
+
+## Calidad de código ⚙️
+
+Según la plataforma CodeFactor este proyecto ha sido calificado con una A (100%)
+
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+- React Js
+- Svgator
+- Google Drive Picker
+- Google Drive PlayGround
+- Leonardo Ai
+- Visual Studio Code
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+
+
+
