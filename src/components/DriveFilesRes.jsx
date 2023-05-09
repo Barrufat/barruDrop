@@ -23,7 +23,6 @@ const DriveFilesRes = ({ usuario }) => {
         })
     }
 
-
     return (
         <>
             <div className='driveContRes'>
