@@ -44,9 +44,10 @@ Según la plataforma CodeFactor este proyecto ha sido calificado con una A (100%
 - Google Drive PlayGround
 - Leonardo Ai
 - Visual Studio Code
+- 
 
 
-## Gracias por vuestra atención y no olvidéis visitar mi Portfolo www.barru-fat.web.app para seguir viendo mis proyectos 😊😊!
+## Gracias por vuestra atención y no olvidéis visitar mi Portfolo www.barru-fat.web.app para poder seguir hechándole un vistazo a mis proyectos 😊😊!
 
 
 
