@@ -31,7 +31,7 @@ firebase deploy
 Al tratarse de una prueba técnica de Frontend no se ha conectado a ningún proyecto de BackEnd y, por lo tanto, ni los datos de los Usuarios ni los archivos se almacenan en ningún servidor, pues esto correspondría a otra fase del proyecto.
 
 
-## Calidad de código ⚙️
+## Calidad de código 📋
 
 Según la plataforma CodeFactor este proyecto ha sido calificado con una A (100%)
 
@@ -44,6 +44,11 @@ Según la plataforma CodeFactor este proyecto ha sido calificado con una A (100%
 - Google Drive PlayGround
 - Leonardo Ai
 - Visual Studio Code
+
+
+## Gracias por vuestra atención y no olvidéis visitar mi Portfolo www.barru-fat.web.app para seguir viendo mis proyectos 😊😊!
+
+
 
 
 
