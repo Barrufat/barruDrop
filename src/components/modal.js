@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import './modal.css'
 
-const Modal = ({ estado, cambiarEstado, sendUserName }) => {
+const Modal = ({ estado, cambiarEstado, sendUserName,  }) => {
 
     const [userName , setUserName] = useState ('');
     const [userPass , setUserPass] = useState ('');
@@ -17,11 +17,11 @@ const Modal = ({ estado, cambiarEstado, sendUserName }) => {
 
     return (
         <>
-            {estado &&
+            {estado && 
                 <div className='overlay'>
                     <div className='contModal'>
                         <div className='contRegister'>
-                            <h1>Registro y acceso</h1>
+                            <h1 className='registerTitle'>Registro y acceso</h1>
                             <form>
                                 <p className='registerText'>Nombre de usuario</p>
                                 <input className="registerInput" type="text" value={userName} onChange={(e) => setUserName(e.target.value)} />
