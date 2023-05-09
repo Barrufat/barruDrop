@@ -5,6 +5,7 @@ import './App.css';
 import DriveFiles from './components/DriveFiles';
 import DriveFilesRes from './components/DriveFilesRes';
 import Modal from './components/modal';
+import ModalRes from './components/modalRes';
 import useMediaQuery from './config/useMediaQuery';
 
 
@@ -61,17 +62,23 @@ function App() {
 
   return (
     <div className="App">
-      <Modal estado={toggleModal} cambiarEstado={cerrarModal} sendUserName={setName} />
       {matches ?
-        <div className="AppCont">
-          <img src={numeroBox} alt='box' className='boxImg' />
-          <DriveFiles usuario={usuario} />
-        </div>
+        <>
+          <Modal estado={toggleModal} matches={matches} cambiarEstado={cerrarModal} sendUserName={setName} />
+          <div className="AppCont">
+            <img src={numeroBox} alt='box' className='boxImg' />
+            <DriveFiles usuario={usuario} />
+          </div>
+        </>
         :
-        <div className='AppContRes'>
-          <DriveFilesRes usuario={usuario} />
-          <img src={numeroBoxRes} alt='box' className='boxImgRes' />
-        </div>
+        <>
+          <ModalRes estado={toggleModal} matches={matches} cambiarEstado={cerrarModal} sendUserName={setName} />
+          <div className='AppContRes'>
+            <DriveFilesRes usuario={usuario} />
+            <img src={numeroBoxRes} alt='box' className='boxImgRes' />
+          </div>
+        </>
+
       }
     </div>
   );
